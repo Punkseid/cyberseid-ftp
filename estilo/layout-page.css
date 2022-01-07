@@ -368,7 +368,7 @@ footer{
     height: 100%;
     text-align: center;
 }
-.vertical-content a{
+.vertical-content a:hover{
     background-color: var(--body-color);
 }
 
