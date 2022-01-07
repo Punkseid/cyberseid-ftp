@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberseid</title>
+    <link rel="stylesheet" href="/estilo/layout-page.css">
+    <link rel="stylesheet" href="estilo/responsive.css">
+
+    <style>
+       h3{
+           font-size: 1.5em;
+           margin-top: 30px;
+           margin-bottom: 10px;
+       }
+       .apresentation{
+           width: 1100px;
+           max-width: 90%;
+           text-align: center;
+           margin: 8em auto 0;
+           padding: 15px;
+           padding-top: 10ex;
+       }
+       .apresentation-wrapp{
+           display: grid;
+           grid-template-columns: 2fr 1fr;
+           column-gap: 20px;
+           text-align: left;
+        }
+
+        .card-profile{
+            background-color: var(--card-color);
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid var(--link-color);
+        }
+        .card-profile p{
+            color: #141414;
+        }
+        .artigo-wrapp{
+            width: 1100px;
+            margin: auto;
+            text-align: center;
+            max-width: 100%;
+        }
+        .artigo-wrapp a{
+            background-color: var(--body-color);
+        }
+        .artigo-wrapp .artigo{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .list-inside-content{
+            position: relative;
+            top: 15px;
+            z-index: -1;
+        }
+        .list-inside-content li{
+            list-style: disc;
+            margin: 5px 0;
+            font-family: var(--font-body);
+            font-size: 1.1em;
+        }
+        @media(max-width: 820px){
+            .apresentation-wrapp{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .card-profile{
+                max-width: 400px;
+                margin: auto;
+                margin-bottom: 50px;
+            }
+        }
+        @media(max-width: 430px){
+            .card-profile{
+                max-width: 90%;
+            }
+            .artigo-wrapp .artigo{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        }
+    </style>
+
+</head>  
+<body>
+    
+    <header>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <a href="#" class="logo">Cyberseid</a>
+        <ul class="header-list">
+            <li><a href="https://www.instagram.com/cyberseid2025/" target="_blank"><img src="/images/icon-instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/punkseid" target="_blank"><img src="/images/icon-twitter.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/ruan-gabriel-102a0b228/" target="_blank"><img src="/images/icon-linkedin.png" alt=""></a></li>
+            <li><a href="mailto:contatos.ruangabriel@gmail.com.br" target="_blank"><img src="/images/icon-gmail.png" alt=""></a></li>
+            <li><a href="https://github.com/Punkseid" target="_blank"><img src="/images/icon-github.png" alt=""></a></li>
+        </ul>
+        <a href="#guide"><img class="botao-guide" src="/images/icone-bussola.png.png" alt=""></a>
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <a href="#guide"><img class="botao-guide" src="/images/icone-bussola.png.png" alt=""></a>
+            <li><a href="#">home</a></li>
+            <li><a href="#artigos">+Artigos</a></li>
+            <li><a href="mailto:contatos.ruangabriel@gmail.com" target="_blank">Contatos</a></li>
+            <li><a href="#sobre">sobre</a></li>
+        </ul>
+    </nav>
+
+    <div class="responsive-menu-mobile">
+        <ul class="nav-mobile">
+            <li><a href="#">home</a></li>
+            <hr>
+            <li><a href="mailto:contatos.ruangabriel@gmail.com" target="_blank">Contatos</a></li>
+            <hr>
+            <li><a href="#artigos">+Artigos</a></li>
+            <hr>
+            <li><a href="#sobre">sobre</a></li>
+        </ul>
+        <ul class="contatos-mobile">
+            <li><a href="https://www.instagram.com/cyberseid2025/" target="_blank"><img src="/images/icon-instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/punkseid" target="_blank"><img src="/images/icon-twitter.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/ruan-gabriel-102a0b228/" target="_blank"><img src="/images/icon-linkedin.png" alt=""></a></li>
+            <li><a href="mailto:contatos.ruangabriel@gmail.com.br" target="_blank"><img src="/images/icon-gmail.png" alt=""></a></li>
+            <li><a href="https://github.com/Punkseid" target="_blank"><img src="/images/icon-github.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="apresentation">
+        <div class="apresentation-wrapp">
+            <div class="apresentation-content">
+                <h1 style="font-family: var(--font-title); font-size: 3em; text-align: center;">O que não te contaram sobre <br> criar um site!</h1>
+                <h2 style="font-family: var(--font-title); font-size: 16px; margin: 30px 20px;text-align: center;">Esta é a home-page do Cyberseid, o maior site de tecnologia <br> do meu e provavelmente do seu ... bairro!</h2>
+                <div style="text-align: center;padding: 20px;"><a href="https://br.pinterest.com/pin/120260252540257979/" target="_blank"><img src="/images/TheWitcher3.jpeg" alt="Cyberseid-Imagem-TheWitcher3" style="padding: 0px; border: 2px solid black;"></a></div>
+            </div>
+            <div class="card-profile" id="sobre">
+                <h2 class="h2-perfil" style="text-align: center;font-family: var(--font-custom);font-size: 1.3em;">Punkseid, The Creator</h2>
+            <div style="display: block; align-items: center; text-align: center;">
+                <a href="https://pin.it/74U4AJX" target="_blank"><img src="/images/Punkseid-perfil.png" alt="Cyberseid-Imagem-perfil-geralt-TW3-Punkseid"></a>
+            </div>
+            <div style="padding-top: 20px;">
+                <p class="text-content">
+                    Olá meus caros leitores, eu me chamo Punkseid (nickname), tenho 19 anos e, sim, sou fã de The Witcher.
+                </p>
+                <p class="text-content">
+                    Criei este site para levar conhecimento sobre tecnologia de uma forma diferente, isto não é um blog de notícias e talvez nem mesmo um blog, sou apenas um entusiasta e apaixonado pelos bites.
+                </p>
+                <p class="text-content">
+                    Dedico-me ao máximo para levar conteúdos de qualidade e, que possam ter um impacto na vida das pessoas.
+                </p>
+                <p class="text-content">
+                    Esta página contém todos os artigos já criados, atualizações e também um guia de como aproveitar melhor as informações e, além disso, conto um pouco do processo de criação do site e do conteúdo. Espero ajudá-los.
+                </p>
+            </div>
+            <div class="column-content">
+                <a href="https://www.instagram.com/ruan_1707/" target="_blank"><img src="/images/icon-instagram-mini.png" alt=""></a>
+                <img src="/images/icon-xbox.png" alt="icon-xbox" style="cursor: pointer;">
+                <img src="/images/icon-linux.png" alt="icon-linux" style="cursor: pointer;">
+            </div>
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="guide" id="guide">
+        <img src="/images/guide-placa.png" alt="Cyberseid-icon-guia-de-navegação">
+        <h3 style="font-family: var(--font-title);">Guia de Navegação:</h3>
+        <ul>
+            <li><a class="links" href="#artigos">Artigos</a></li>
+            <li><a class="links" href="#seçao2">Processo de criação do site</a></li>
+            <li><a class="links" href="#seçao3">Etapas da criação de conteúdo</a></li>
+            <li><a class="links" href="#seçao4">Guia de como navegar no site</a></li>
+        </ul>
+    </div>
+
+    <div class="artigo-wrapp">
+        <h2 class="header-classe-2" id="artigos" style="margin: 2em auto 1em;padding: 10px;font-size: 2em; text-align: left;">Artigos:</h2>
+                <div class="artigo">
+                    <div>
+                        <a href="/blog/tudo-sobre-NFT.html" target="_self"  class="links-externos">
+                            <img src="/images/Cyberseid-NFT-imagem-artigo.jpg" alt="Cyberseid-NFT-imagem-artigo">
+                            <p>Cyberseid: Tudo Sobre NFT</p>
+                        </a>
+                    </div> 
+                </div>
+    </div>
+
+    <main class="main-wrap">
+        <section class="main-content">
+            <div class="column-content">
+                <h2 class="header-c2" id="seçao2">
+                    Processo de criação do site
+                </h2>
+                <p class="text-content">
+                    O maior desafio de se criar um site, não foi nem a programação, e sim o conceito. Queria que não fosse algo "industrializado", iguais aos muitos sites que servem apenas para os fins comerciais. Percebi que muitas pessoas, por mais que estivéssemos na era tecnológica, não sabem o que realmente significa a tecnologia, elas acham que está limitada apenas aos celulares e redes sociais e, não tem a mínima noção do que a tecnologia de hoje é capaz de fazer.
+                </p>
+                <p class="text-content">
+                    Foi pensando nisso que resolvi criar este site, com o intuito de trazer conteúdo relevante e que podem ter um impacto na vida das pessoas, de uma forma mais informal.
+                </p>
+            </div>
+            <div class="column-content">
+                <h3>criação do conceito</h3>
+                <p class="text-content">
+                    Quando tive a ideia de criar um site sobre tecnologia, logo pensei em rever alguns filmes clássicos como Matrix, O vingador do futuro. É claro que os games e HQs também influenciaram nesse processo.
+                </p>
+                <p class="text-content">
+                    Então cheguei a conclusão de que o conceito seria algo no estilo cyberpunk, um mundo dominado pela tecnologia, mas totalmente utópico. É daí que vem o nome, uma junção de cyber, que tem a ver com tecnologia, e seid que vem de Darkseid, que é um vilão das HQs da DCcomics que representa a desolação e utopia por onde passa.
+                </p>
+                <img src="/images/darkseid-min.jpeg" alt="Cyberseid-Imagem-darkseid">
+                <p class="text-content">
+                    Esse processo não foi nada fácil e nem rápido, muitas ideias jogadas fora, muito tempo gasto, até chegar em uma conclusão. Se você quiser criar um site, tenho algumas dicas que pode te ajudar: 
+                </p>
+                <ul class="list-inside-content">
+                    <li>Gostar verdadeiramente do que você se propor a fazer.</li>
+                    <li>Saber quais são as suas referências.</li>
+                    <li>Fazer um Brainstorm te ajuda a garimpar as ideias.</li>
+                </ul>
+            </div>
+            <div class="conlumn-content">
+                <h2 class="header-c2" id="seçao3">
+                    Etapas da criação de conteúdo
+                </h2>
+                <h3>Escolha do tema</h3>
+                <p class="text-content">
+                    Primeiro, começo com a escolha do tema, tem que ser algo bem interessante, tanto para pesquisar e aprender, quanto para escrever um artigo para você, meu caro.
+                </p>
+                <h3>Pesquisa</h3>
+                    <p class="text-content">
+                        Com o tema escolhido, vou em busca de fontes de pesquisas confiáveis, sempre dou uma olhado no <a class="links" href="https://scholar.google.com.br/schhp?hl=pt-PT" target="_blank">Google Académico</a>, lá você pode encontrar vários artigos acadêmicos sobre vários assuntos. Também pesquiso bastante em sites mais tradicionais, nesse caso, entro em vários sites pra me certificar de que o conteúdo está correto, ou então procuro por documentários. Sempre anoto os links.
+                    </p>
+                    <h3>Compilação do conteúdo</h3>
+                    <p class="text-content">
+                        Agora eu coloco em prática tudo o que aprendi, redijo o texto em um bloco de notas, e depois vou passando para o HTML.
+                     </p>
+                     <h3>Teste de leitura</h3>
+                     <p class="text-content">
+                        Aqui eu apresento o texto para algumas pessoas, para elas avaliarem se ficou fácil de entender, se a sintáxe está boa.
+                    </p>
+                    <h3>Correções</h3>
+                    <p class="text-content">
+                        Último estágio, eu leio e releio cada linha em busca de erros, seja ortográficos ou de semântica (as vezes alguns passam despercebidos). Também sempre testo novas funções adicionadas. E quando tudo estiver no seu devido lugar, Voilá.
+                    </p>
+            </div>
+            <div class="column-content"> 
+                <h2 class="header-c2" id="seçao4">Como navegar no site</h2>
+                <p class="text-content">
+                    Muitas vezes você entra em um site procurando apenas uma informação, é por isso que disponho um guia de navegação logo no início, para não perder tempo. Sempre que você tiver terminado de ler uma seção, você pode rolar para baixo e ir para o próximo conteúdo ou, também, pode clicar no ícone da bússola no menu que te levará até o guia, assim podendo escolher qual seção você quer ler. Recomendo ler todas.
+                </p>
+            </div>
+                
+            
+        </section>
+
+        <aside class="vertical-content">
+                <div class="column-vertical">
+                    <div>
+                        <a href="/blog/tudo-sobre-NFT.html" target="_self"  class="links-externos">
+                            <img src="/images/Cyberseid-NFT-imagem-artigo.jpg" alt="Cyberseid-NFT-imagem-artigo">
+                            <p>Cyberseid: Tudo Sobre NFT</p>
+                        </a>
+                    </div> 
+                </div>
+                </aside> 
+    </main>
+
+    <section class="exo-border-comment">
+        <div class="comment">
+            <div class="autor">
+                <h2 style="font-family: var(--font-custom); font-size: 1.2em;">Punkseid, The Creator</h2>
+                <div class="autor-img">
+                    <img class="punkseid" src="/images/Punkseid-perfil.png" alt="Punkseid-perfil">
+                    <div>
+                        <a href="https://www.instagram.com/ruan_1707/" target="_blank"><img src="/images/icon-instagram-mini.png" alt=""></a>
+                        <img src="/images/icon-xbox.png" alt="icon-xbox" style="cursor: pointer;">
+                        <img src="/images/icon-linux.png" alt="icon-linux" style="cursor: pointer;">
+                    </div>
+                </div>
+                <p class="text-content">
+                    Nome: Pankseid <br>
+                    Idade: 19 <br>
+                    Profissão: programador <br>
+                    Game preferido: The Witcher 3 <br>
+                    Livro preferido: <a class="links" href="https://www.amazon.com.br/Sonhos-Einstein-Alan-Lightman/dp/8535922954" target="_blank">Sonhos de Eistein</a> (Alan lightman)
+                </p>
+                <p class="text-content">
+                    Se houver qualquer erro, ou sugestões <br>por gentileza, entrar em <a class="links" href="mailto:contatos.ruangabriel@gmail.com" target="_blank">contato</a>.
+                </p>
+            </div>
+            <div class="comentario">
+                <h2>Comentário</h2>
+                <div style="margin-top: 10px;">
+                    <p class="text-content">
+                        <strong>O que ninguém te contou</strong>: você não precisa criar o site mais perfeito do mundo, aliás, a única coisa mais perfeita é a imperfeição.
+                    </p>
+                    <p class="text-content">
+                        Não precisa criar um site só para monetizar (se tiver a oportunidade de monetizar, melhor ainda). Apenas crie para se expressar, ou ajudar outras pessoas, ou simplismente pela diversão.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            &copy;Punkseid | 05/01/2022
+        </div>
+    </footer>
+
+    <script src="/response/navbar.js"></script>
+</body>
+</html>
