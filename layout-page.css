@@ -77,9 +77,10 @@ header{
     height: 8vh;
     background-color: var(--background-color-navbar);
     display: flex;
+    justify-content: center;
     align-items: center;
     position: fixed;
-    top: 0;
+    
 }
 header .botao-guide{
     width: 30px;
@@ -90,6 +91,7 @@ header .botao-guide{
 }
 header a{
     background-color: var(--background-color-navbar);
+    padding: 0;
 }
 .mobile-menu{
     position: relative;

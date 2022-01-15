@@ -127,6 +127,9 @@
     .comment .autor .autor-img{
         text-align: center;
     }
+    .guide{
+        font-size: 12px;
+    }
 }
 
 .responsive-menu-mobile.active{
